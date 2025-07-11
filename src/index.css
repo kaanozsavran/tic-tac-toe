@@ -4,8 +4,13 @@
 
 body {
   font-family: sans-serif;
-  margin: 20px;
+  margin: 0;
   padding: 0;
+  background-color: #fdf6e3; /* Krem arka plan */
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 h1 {
@@ -46,16 +51,6 @@ ul {
   padding-inline-start: 20px;
 }
 
-* {
-  box-sizing: border-box;
-}
-
-body {
-  font-family: sans-serif;
-  margin: 20px;
-  padding: 0;
-}
-
 .square {
   background: #fff;
   border: 1px solid #999;
@@ -73,18 +68,45 @@ body {
 
 .board-row:after {
   clear: both;
-  content: '';
+  content: "";
   display: table;
 }
 
 .status {
   margin-bottom: 10px;
 }
+
 .game {
   display: flex;
   flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 .game-info {
   margin-left: 20px;
+}
+.game-info button {
+  background-color: #4caf50; /* Yeşil ton */
+  border: none;
+  color: white;
+  padding: 10px 16px;
+  margin-bottom: 8px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.game-info button:hover {
+  background-color: #45a049;
+  transform: scale(1.05);
 }
